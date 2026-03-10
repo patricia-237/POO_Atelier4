@@ -24,6 +24,13 @@ class Employe:
             return
         self.voiture_service=None
 
+class Voiture:
+    def __init__(self, matricule, annee, marque, killometrage):
+        self.matricule = matricule
+        self.annee = annee
+        self.marque = marque
+        self.killometrage = killometrage
+        self.chauffeur = None
 
 
 
