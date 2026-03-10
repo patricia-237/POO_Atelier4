@@ -6,9 +6,10 @@ class Employe:
         self.voiture_service=None
 
     def afficher_infos(self):
-        print(f" numero_permis: {self.numero_permis}, nom: {self.nom}, prenom: {self.prenom}")
+        print(f"Employé:{self.nom} {self.prenom} permis:{self.numero_permis}")
         if self.voiture_service is not None:
             print("la voiture de service est assignée")
+            self.voiture_service.afficher_infos()
         else:
             print("aucune voiture de service n'est assignée")
 
@@ -16,12 +17,20 @@ class Employe:
         if self.voiture_service is not None:
             print("cet employé possède deja une voiture")
             return
+
+        if voiture.chauffeur is not None:
+            print(f"la voiture {voiture.matricule}est deja assignée à {voiture.chauffeur.nom}")
+            return
+
         self.voiture_service=voiture
+        voiture.chauffeur=self
+
 
     def retirer_voiture(self):
         if self.voiture_service is None:
             print("cet employé n'a pas de voiture de service")
             return
+        self.voiture_service.chauffeur=None
         self.voiture_service=None
 
 class Voiture:
@@ -55,10 +64,6 @@ v3.afficher_infos()
 
 e1.affecter_voiture(v1)
 e2.affecter_voiture(v2)
-
-e1.afficher_infos()
-e2.afficher_infos()
-
 
 
 
