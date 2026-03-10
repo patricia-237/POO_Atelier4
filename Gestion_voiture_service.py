@@ -53,6 +53,19 @@ v1.afficher_infos()
 v2.afficher_infos()
 v3.afficher_infos()
 
+e1.affecter_voiture(v1)
+e2.affecter_voiture(v2)
+
+e1.afficher_infos()
+e2.afficher_infos()
+
+
+
+
+
+
+
+
 
 
 
