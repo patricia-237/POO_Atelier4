@@ -44,7 +44,7 @@ class Voiture:
     def afficher_infos(self):
         print(f"matricule: {self.matricule}, annee: {self.annee}, marque: {self.marque}, killometrage: {self.killometrage}")
         if self.chauffeur is not None:
-            print(f"chauffeur:{self.chauffeur.nom},{self.chauffeur.prenom}")
+            print(f"chauffeur:{self.chauffeur.nom} {self.chauffeur.prenom}")
         else:
             print("aucun chauffeur assigné")
 
@@ -64,6 +64,14 @@ v3.afficher_infos()
 
 e1.affecter_voiture(v1)
 e2.affecter_voiture(v2)
+
+e1.afficher_infos()
+e2.afficher_infos()
+
+e1.retirer_voiture()
+e1.afficher_infos()
+
+
 
 
 
