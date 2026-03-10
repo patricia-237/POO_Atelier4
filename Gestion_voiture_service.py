@@ -46,6 +46,13 @@ v1=Voiture("CA588", "2025", "KIA", 15000)
 v2=Voiture("CA589", "2026", "AUDIT", 12000)
 v3=Voiture("CA590", "2023", "RAV4", 20000)
 
+e1.afficher_infos()
+e2.afficher_infos()
+
+v1.afficher_infos()
+v2.afficher_infos()
+v3.afficher_infos()
+
 
 
 
