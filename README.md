@@ -1,4 +1,4 @@
-POO_Atelier4 : Gestion d'un parc de voiture
+POO_Atelier4 : Gestion de voitures de service
 
 
 cours: INF1092 Programmation 2
@@ -8,7 +8,7 @@ coordonné par: Younes Boukouchi
 
 cet atelier consiste à developper un programme en python en
 utilisant la Programmation Orientée Objet à fin de simuler la
-gestion d'un parc de voiture. le programme va:
+gestion de voitures de service. le programme va:
 
 - afficher les informations d'un employé;
 - affecter une voiture à un employé;
