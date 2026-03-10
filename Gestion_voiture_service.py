@@ -39,6 +39,16 @@ class Voiture:
         else:
             print("aucun chauffeur assigné")
 
+e1=Employe("QC456", "Nguemedzi", "patricia")
+e2=Employe("AB569", "Diallo", "Idia")
+
+v1=Voiture("CA588", "2025", "KIA")
+v2=Voiture("CA589", "2026", "AUDIT")
+v3=Voiture("CA590", "2023", "RAV4")
+
+
+
+
 
 
 
