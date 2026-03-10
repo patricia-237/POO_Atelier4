@@ -32,5 +32,18 @@ class Voiture:
         self.killometrage = killometrage
         self.chauffeur = None
 
+    def afficher_infos(self):
+        print(f"matricule: {self.matricule}, annee: {self.annee}, marque: {self.marque}, killometrage: {self.killometrage}")
+        if self.chauffeur is not None:
+            print(f"chauffeur:{self.chauffeur.nom},{self.chauffeur.prenom}")
+        else:
+            print("aucun chauffeur assigné")
+
+
+
+
+
+
+
 
 
